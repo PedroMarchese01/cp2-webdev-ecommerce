@@ -17,7 +17,7 @@ const CardProvider = ({product}) => {
   return (
     <div>
       {item.map((pegaItem , index) => (
-        <Card title = {pegaItem.title} rate = {pegaItem.rate} img = {pegaItem.image} price = {pegaItem.price} key = {index}/>
+        <Card title = {pegaItem.title} rate = {pegaItem.rate} image = {pegaItem.image} price = {pegaItem.price} key = {index}/>
       ))}
     </div>
   )
