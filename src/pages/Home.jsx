@@ -3,7 +3,8 @@ const api = import.meta.env.VITE_API
 export default function Home() {
   useEffect(() => {
     fetch(api)
-    .then
+    .then(res => res.json())
+    .then(data => console.log(data  ))
   }, [])
   return (
     <div>
